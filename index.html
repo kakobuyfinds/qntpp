@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f8f2e9">
+  <title>MyCNBox spreadsheet | Katalog i poradnik zakupowy</title>
+  <meta name="description" content="MyCNBox spreadsheet po polsku. Przejrzyj 10 kategorii i sprawdź, jak porównać linki do produktów, rozmiary, zdjęcia QC oraz koszt wysyłki do Polski.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="MyCNBox spreadsheet | Katalog i poradnik zakupowy">
+  <meta property="og:description" content="Dziesięć kategorii oraz praktyczne wskazówki dotyczące wymiarów, zdjęć z magazynu i dostawy do Polski.">
+  <meta property="og:image" content="https://nohble.com/cdn/shop/products/314974_618eb2218b17d5.00291573_CW2288-111-PHSRH000-2000_large_8c15eb5f-3094-42e2-880b-a1745f2d909e.png?v=1687900712">
+  <meta property="og:image:alt" content="Biały niski but Nike Air Force 1 ’07 z białym logo Swoosh">
+  <link rel="preconnect" href="https://nohble.com">
+  <!-- Nie udało się zweryfikować pierwszej strony Bing. Tematy opracowano na podstawie 10 innych wyników: mycnbox.org, mycnboxspreadsheet.com, mycnboxfindx.com, mycnbox.net, usfansyupoo.com, mycnboxlinks.com, mycnboxfind.com, spreadsheet-mycnbox.com, mycnbox.co.uk i bestmycnboxspreadsheet.com. -->
+  <style>
+    :root{color-scheme:light;--bg:#f8f2e9;--ink:#29201f;--muted:#625450;--red:#742f40;--line:#d5c5bb;--paper:#fffaf3;--image:#eee7df}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.58 system-ui,-apple-system,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2{font-family:Georgia,serif;font-weight:700;line-height:1.06;letter-spacing:-.035em}
+    h1{font-size:clamp(2.8rem,7.2vw,6rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(2rem,4vw,3rem)}
+    h3{font-size:1.16rem;line-height:1.27}
+    p{max-width:66ch}
+    a{color:var(--red);text-underline-offset:.2em}
+    :focus-visible{outline:3px solid var(--red);outline-offset:3px}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .mast{border-bottom:1px solid var(--line)}
+    .mast .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.25rem 1rem;padding-block:.75rem}
+    .mast a{font-weight:800}
+    .label{font-size:.75rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red)}
+    .hero{display:grid;grid-template-columns:1.35fr 1fr;gap:1rem 2.5rem;align-items:center;padding-block:clamp(1.5rem,5vw,3.8rem)}
+    .intro h1{margin-block:.4rem .75rem}
+    .intro p:not(.label){font-size:1.1rem;color:var(--muted)}
+    .categories{grid-column:1;align-self:start;border-top:1px solid var(--line);padding-top:.65rem}
+    .categories ul{list-style:none;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.25rem 1rem}
+    .categories a{display:flex;align-items:center;min-height:2.75rem;gap:.45rem;border-bottom:1px solid var(--line);text-decoration:none;font-weight:700}
+    .categories a:hover{text-decoration:underline}
+    .categories span{margin-left:auto;font-size:.75em}
+    .feature{grid-column:2;grid-row:1 / span 2;border:1px solid var(--line);background:var(--paper)}
+    img{display:block;width:100%;height:auto;background:var(--image)}
+    .feature img{aspect-ratio:1;object-fit:contain}
+    figcaption{padding:.65rem .85rem;font-size:.87rem;color:var(--muted)}
+    .method{padding-block:1.55rem;background:#eadbd5;border-block:1px solid var(--line)}
+    .method p{margin-top:.45rem}
+    .section{padding-block:clamp(1.6rem,4vw,3rem);border-bottom:1px solid var(--line)}
+    .section h2{margin-block:.3rem 1rem}
+    .articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    article,.gallery figure{background:var(--paper);border:1px solid var(--line)}
+    article{padding:1rem}
+    article h3{margin-block:.45rem}
+    article p+p{margin-top:.65rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin-top:1rem}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .faq{display:grid;grid-template-columns:1fr 2fr;gap:1rem}
+    details{padding:.75rem 0;border-bottom:1px solid var(--line)}
+    details:first-child{border-top:1px solid var(--line)}
+    summary{min-height:1.6rem;cursor:pointer;font-weight:750;color:var(--red)}
+    details p{margin:.4rem 0 0 1.1rem}
+    footer{padding-block:1.2rem 1.7rem}
+    footer p{margin-top:.55rem;font-size:.9rem;color:var(--muted)}
+    .button{display:inline-flex;align-items:center;min-height:2.75rem;padding:.45rem .85rem;background:var(--red);color:white;font-weight:750;text-decoration:none}
+    .button:hover{text-decoration:underline}
+    @media(max-width:49rem){.hero{grid-template-columns:1fr}.feature{grid-column:1;grid-row:auto;width:min(100%,34rem)}.articles,.faq{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"MyCNBox spreadsheet | Katalog i poradnik zakupowy",
+        "description":"MyCNBox spreadsheet po polsku. Przejrzyj 10 kategorii i sprawdź, jak porównać linki do produktów, rozmiary, zdjęcia QC oraz koszt wysyłki do Polski.",
+        "inLanguage":"pl",
+        "about":[{"@type":"Thing","name":"Linki do produktów"},{"@type":"Thing","name":"Kontrola jakości w magazynie"},{"@type":"Thing","name":"Wysyłka do Polski"}],
+        "hasPart":[
+          {"@id":"#faq"},
+          {"@type":"Article","@id":"#linki","headline":"Jak sprawdzić link do produktu?","inLanguage":"pl"},
+          {"@type":"Article","@id":"#qc","headline":"Jak czytać zdjęcia QC z magazynu?","inLanguage":"pl"},
+          {"@type":"Article","@id":"#wysylka","headline":"Jak oszacować koszt wysyłki do Polski?","inLanguage":"pl"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#faq",
+        "name":"Pytania przed zakupem",
+        "inLanguage":"pl",
+        "mainEntity":[
+          {"@type":"Question","name":"Co to jest MyCNBox spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"To określenie katalogu lub listy odsyłaczy, które pomagają znaleźć i porównać produkty przed zakupem. Kategorie na tej stronie prowadzą do Hipobuyfind."}},
+          {"@type":"Question","name":"Jak sprawdzić rozmiar butów przed zakupem?","acceptedAnswer":{"@type":"Answer","text":"Zmierz obie stopy, zapisz długość dłuższej w centymetrach i sprawdź tabelę konkretnego modelu. Jeśli tabela podaje długość wkładki, sprawdź, jaki zapas zaleca sprzedawca."}},
+          {"@type":"Question","name":"Czy zdjęcie QC potwierdza autentyczność?","acceptedAnswer":{"@type":"Answer","text":"Zdjęcie QC pomaga ocenić wygląd, stan i zgodność wariantu. Do potwierdzenia autentyczności potrzebna jest osobna weryfikacja pochodzenia produktu."}},
+          {"@type":"Question","name":"Gdzie sprawdzić koszt dostawy do Polski?","acceptedAnswer":{"@type":"Answer","text":"Sprawdź kalkulator lub podsumowanie wysyłki u wybranego pośrednika. Podaj kraj docelowy, wagę i wymiary zapakowanej paczki, a następnie porównaj warunki dostępnych metod dostawy."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/qntpp/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span class="label">Przewodnik zakupowy po polsku</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero wrap">
+      <div class="intro">
+        <p class="label">Katalog i poradnik</p>
+        <h1>MyCNBox spreadsheet</h1>
+        <p>Znajdź kategorię, porównaj linki do produktów i zapisz wybrany wariant. Przed zakupem sprawdź rozmiar, zdjęcia z magazynu i przewidywany koszt dostawy do Polski.</p>
+      </div>
+      <nav class="categories" aria-label="Kategorie produktów">
+        <p class="label">10 kategorii produktów</p>
+        <ul>
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Buty <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">Koszulki <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Kurtki <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Spodnie i szorty <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Nakrycia głowy <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Komplety <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Bielizna <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Koszulki sportowe <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Akcesoria <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+      <figure class="feature">
+        <img src="https://nohble.com/cdn/shop/products/314974_618eb2218b17d5.00291573_CW2288-111-PHSRH000-2000_large_8c15eb5f-3094-42e2-880b-a1745f2d909e.png?v=1687900712" width="480" height="480" loading="eager" fetchpriority="high" alt="Biały niski but Nike Air Force 1 ’07 z białym logo Swoosh">
+        <figcaption>Nike Air Force 1 ’07. Przy porównywaniu butów zapisz kod modelu i wersję kolorystyczną.</figcaption>
+      </figure>
+    </div>
+
+    <section class="method" aria-labelledby="lista">
+      <div class="wrap">
+        <h2 id="lista">Zrób krótką listę porównawczą</h2>
+        <p>Wystarczy jeden wiersz na produkt. Zapisz link do sprzedawcy, identyfikator produktu, wybrany kolor i rozmiar, datę sprawdzenia dostępności oraz cenę w CNY. Dodaj osobne pola na zdjęcia QC, wagę paczki i koszt wysyłki. Dzięki temu łatwiej wrócisz do właściwej oferty.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="poradnik">
+      <p class="label">Trzy krótkie artykuły</p>
+      <h2 id="poradnik">Od wyboru produktu do wysyłki</h2>
+      <div class="articles">
+        <article id="linki">
+          <p class="label">01 / Oferta i rozmiar</p>
+          <h3>Jak sprawdzić link do produktu?</h3>
+          <p>Otwórz ofertę sprzedawcy i sprawdź, czy identyfikator produktu zgadza się z zapisanym w katalogu. Zweryfikuj dostępność rozmiaru i koloru. Jeśli link wygasł, szukaj po kodzie modelu i porównaj warianty w nowej ofercie.</p>
+          <p>W tabeli rozmiarów odzieży sprawdź, czy sprzedawca podaje obwód klatki piersiowej, czy szerokość pod pachami na płasko. Porównaj też długość rękawa lub nogawki z ubraniem, które dobrze leży.</p>
+        </article>
+        <article id="qc">
+          <p class="label">02 / Kontrola jakości</p>
+          <h3>Jak czytać zdjęcia QC z magazynu?</h3>
+          <p>QC to kontrola jakości. Na zdjęciach magazynowych sprawdź metkę z rozmiarem, symetrię pary butów, stan podeszwy oraz wykończenie szwów. Przy dodatkach obejrzyj zapięcie i miejsca narażone na zarysowania.</p>
+          <p>Jeśli istotny detal jest nieczytelny, zapytaj o dodatkowe zdjęcie z miarką. Przy rozbieżności sprawdź zasady zwrotu do sprzedawcy przed zleceniem wysyłki międzynarodowej.</p>
+        </article>
+        <article id="wysylka">
+          <p class="label">03 / Plan dostawy</p>
+          <h3>Jak oszacować koszt wysyłki do Polski?</h3>
+          <p>Zsumuj cenę produktu, koszt dostawy do magazynu i przewidywany koszt dostawy międzynarodowej. W kalkulatorze przewoźnika sprawdź, czy stawka zależy od wagi rzeczywistej, czy od wagi objętościowej.</p>
+          <p>Przy łączeniu zamówień porównaj wymiary po spakowaniu, limit wybranej metody dostawy, śledzenie przesyłki i ewentualne opłaty przy imporcie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="detale">
+      <p class="label">Galeria detali</p>
+      <h2 id="detale">Na co spojrzeć z bliska?</h2>
+      <p>Zdjęcia ilustrują detale, które warto sprawdzić przy wyborze odzieży, nakryć głowy i biżuterii.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://treasuresofnewyorkcity.com/cdn/shop/products/image_4eb813a4-1e2c-4eb3-b0d0-67f5c4c07ecd.jpg?v=1674009712&amp;width=600" width="600" height="600" loading="lazy" decoding="async" alt="Dżinsowa kurtka Louis Vuitton z powtarzającym się monogramem">
+          <figcaption>Louis Vuitton · rozmieszczenie wzoru na kurtce.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.clothbase.com/uploads/c395c648-651b-4dbf-ad3d-111288365c79/P01050876_b1.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Model w czapce Gucci z daszkiem i kurtce we wzór GG">
+          <figcaption>Gucci · profil daszka i rozmieszczenie wzoru.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/clic-hh-bracelet--703203FB1F-front-wm-1-0-0-1000-1000_g.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Bransoletka Hermès Clic HH z matową niebieską emalią i zapięciem w kształcie litery H">
+          <figcaption>Hermès · emalia i mechanizm zapięcia.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://bordergara.com/cdn/shop/files/dr-2505-0858__3_800x.jpg?v=1764046005" width="800" height="800" loading="lazy" decoding="async" alt="Srebrzysta bransoletka Dior CD Icon z cienkich ogniw łańcuszka">
+          <figcaption>Dior · kształt ogniw i wykończenie metalu.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="faq" class="section wrap faq" aria-labelledby="pytania">
+      <div>
+        <p class="label">FAQ</p>
+        <h2 id="pytania">Pytania przed zakupem</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Co to jest MyCNBox spreadsheet?</summary>
+          <p>To określenie katalogu lub listy odsyłaczy, które pomagają znaleźć i porównać produkty przed zakupem. Kategorie na tej stronie prowadzą do Hipobuyfind.</p>
+        </details>
+        <details>
+          <summary>Jak sprawdzić rozmiar butów przed zakupem?</summary>
+          <p>Zmierz obie stopy, zapisz długość dłuższej w centymetrach i sprawdź tabelę konkretnego modelu. Jeśli tabela podaje długość wkładki, sprawdź, jaki zapas zaleca sprzedawca.</p>
+        </details>
+        <details>
+          <summary>Czy zdjęcie QC potwierdza autentyczność?</summary>
+          <p>Zdjęcie QC pomaga ocenić wygląd, stan i zgodność wariantu. Do potwierdzenia autentyczności potrzebna jest osobna weryfikacja pochodzenia produktu.</p>
+        </details>
+        <details>
+          <summary>Gdzie sprawdzić koszt dostawy do Polski?</summary>
+          <p>Sprawdź kalkulator lub podsumowanie wysyłki u wybranego pośrednika. Podaj kraj docelowy, wagę i wymiary zapakowanej paczki, a następnie porównaj warunki dostępnych metod dostawy.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">
+    <a class="button" href="https://www.hipobuyfind.com">Przejdź do Hipobuyfind <span aria-hidden="true">&nbsp;↗</span></a>
+    <p>Niezależny poradnik zakupowy. Zdjęcia marek służą jako przykłady i nie potwierdzają dostępności pokazanych modeli w katalogu.</p>
+  </footer>
+</body>
+</html>
